@@ -1,43 +1,103 @@
 package com.pride.domain;
 
 public class Custom {
-    private String id;
+    private String customId;
 
-    private String username;
+    private String customName;
 
-    private String password;
+    private String fullName;
 
-    private String locked;
+    private String address;
 
-    public String getId() {
-        return id;
+    private String fax;
+
+    private String email;
+
+    private String ownerName;
+
+    private String ownerTel;
+
+    private Integer status;
+
+    private String note;
+
+    public String getCustomId() {
+        return customId;
     }
 
-    public void setId(String id) {
-        this.id = id == null ? null : id.trim();
+    public void setCustomId(String customId) {
+        this.customId = customId == null ? null : customId.trim();
     }
 
-    public String getUsername() {
-        return username;
+    public String getCustomName() {
+        return customName;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setCustomName(String customName) {
+        this.customName = customName == null ? null : customName.trim();
     }
 
-    public String getPassword() {
-        return password;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+    public void setFullName(String fullName) {
+        this.fullName = fullName == null ? null : fullName.trim();
     }
 
-    public String getLocked() {
-        return locked;
+    public String getAddress() {
+        return address;
     }
 
-    public void setLocked(String locked) {
-        this.locked = locked == null ? null : locked.trim();
+    public void setAddress(String address) {
+        this.address = address == null ? null : address.trim();
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax == null ? null : fax.trim();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName == null ? null : ownerName.trim();
+    }
+
+    public String getOwnerTel() {
+        return ownerTel;
+    }
+
+    public void setOwnerTel(String ownerTel) {
+        this.ownerTel = ownerTel == null ? null : ownerTel.trim();
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note == null ? null : note.trim();
     }
 }

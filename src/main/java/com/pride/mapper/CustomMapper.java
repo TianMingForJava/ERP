@@ -11,7 +11,7 @@ public interface CustomMapper {
 
     int deleteByExample(CustomExample example);
 
-    int deleteByPrimaryKey(String id);
+    int deleteByPrimaryKey(String customId);
 
     int insert(Custom record);
 
@@ -19,7 +19,7 @@ public interface CustomMapper {
 
     List<Custom> selectByExample(CustomExample example);
 
-    Custom selectByPrimaryKey(String id);
+    Custom selectByPrimaryKey(String customId);
 
     int updateByExampleSelective(@Param("record") Custom record, @Param("example") CustomExample example);
 
