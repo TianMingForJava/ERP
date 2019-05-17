@@ -1,4 +1,4 @@
-package com.cskaoyan.config;
+package com.pride.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

@@ -1,4 +1,4 @@
-package com.cskaoyan.config;
+package com.pride.config;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = "com.cskaoyan",
+@ComponentScan(basePackages = "com.pride",
         excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION,classes = {Controller.class, EnableWebMvc.class})})
 public class SpringConfig {
 
@@ -31,7 +31,7 @@ public class SpringConfig {
     @Bean("sqlSessionFactoryBean")
     public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource){
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.cskaoyan.bean");
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.pride.bean");
         sqlSessionFactoryBean.setDataSource(dataSource);
         return sqlSessionFactoryBean;
     }
@@ -40,7 +40,7 @@ public class SpringConfig {
     public MapperScannerConfigurer mapperScannerConfigurer(){
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactoryBean");
-        mapperScannerConfigurer.setBasePackage("com.cskaoyan.mapper");
+        mapperScannerConfigurer.setBasePackage("com.pride.mapper");
         return mapperScannerConfigurer;
     }
 }
